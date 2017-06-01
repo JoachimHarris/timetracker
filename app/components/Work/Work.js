@@ -10,7 +10,9 @@ export default class Work extends Component {
     render() {
         return(
             <View style={styles.container}>
-                <Text style={styles.headline}>{this.props.headline}</Text>
+                <View style={[styles.boxContainer, styles.boxHome]}>
+                    <Text style={styles.headline}>{this.props.headline}</Text>
+                </View>
             </View>
         )
     }
@@ -18,16 +20,22 @@ export default class Work extends Component {
 
 const styles = StyleSheet.create({
     container: {
-        width: '100%',
+
+    },
+    boxContainer: {
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    boxHome: {
         height: 80,
-        padding: '6%',
-        backgroundColor: '#BE6D84',
-        marginTop: 10
+        marginLeft: '6%',
+        marginRight: '6%',
+        marginTop: '6%',
+        backgroundColor: '#BE6D84'
     },
     headline: {
         textAlign: 'center',
-        color: '#fff',
-        marginTop: 12
+        color: '#fff'
     }
 });
 
