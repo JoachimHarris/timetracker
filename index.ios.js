@@ -3,7 +3,7 @@ import { AppRegistry, StyleSheet, View } from 'react-native';
 
 import App from './app/App.js';
 
-export default class TimeTracker extends Component {
+export default class Froost extends Component {
 
     render() {
         return(
@@ -21,4 +21,4 @@ const styles = StyleSheet.create({
     }
 });
 
-AppRegistry.registerComponent('TimeTracker', () => TimeTracker);
+AppRegistry.registerComponent('Froost', () => Froost);
