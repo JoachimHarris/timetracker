@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AppRegistry, Button, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { AppRegistry, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
 export default class Home extends Component {
@@ -12,7 +12,7 @@ export default class Home extends Component {
 
         return(
             <View style={styles.container}>
-                <TouchableOpacity onPress={Actions.about}>
+                <TouchableOpacity onPress={Actions.homemap}>
                     <View style={[styles.boxContainer, styles.boxHome]}>
                         <Text style={styles.headline}>{this.props.headline}</Text>
                     </View>

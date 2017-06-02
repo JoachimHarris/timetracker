@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { AppRegistry, StyleSheet, Text, View } from 'react-native';
+import { AppRegistry, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { Actions } from 'react-native-router-flux';
 
 export default class School extends Component {
 
@@ -10,9 +11,11 @@ export default class School extends Component {
     render() {
         return(
             <View style={styles.container}>
-                <View style={[styles.boxContainer, styles.boxSchool]}>
-                    <Text style={styles.headline}>{this.props.headline}</Text>
-                </View>
+                <TouchableOpacity onPress={Actions.schoolmap}>
+                    <View style={[styles.boxContainer, styles.boxSchool]}>
+                        <Text style={styles.headline}>{this.props.headline}</Text>
+                    </View>
+                </TouchableOpacity>
             </View>
         )
     }

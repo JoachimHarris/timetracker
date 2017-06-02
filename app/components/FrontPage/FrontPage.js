@@ -15,11 +15,11 @@ export default class FrontPage extends Component {
     render() {
         return(
             <View style={styles.container}>
-                    <Text style={styles.headline}>{this.props.headline}</Text>
-                    <Text style={styles.tagline}>{this.props.tagline}</Text>
-                    <Home />
-                    <School />
-                    <Work />
+                <Text style={styles.headline}>{this.props.headline}</Text>
+                <Text style={styles.tagline}>{this.props.tagline}</Text>
+                <Home />
+                <School />
+                <Work />
             </View>
         );
     }
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     headline: {
         fontSize: 30,
         textAlign: 'center',
-        marginTop: 100,
+        marginTop: 140,
         marginBottom: 20,
         fontWeight: '200',
         color: 'grey'
