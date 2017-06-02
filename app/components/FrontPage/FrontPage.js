@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { AppRegistry, StyleSheet, Text, View } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 import School from '../School/School.js';
 import Work from '../Work/Work.js';
@@ -13,6 +14,7 @@ export default class FrontPage extends Component {
     }
 
     render() {
+
         return(
             <View style={styles.container}>
                 <Text style={styles.headline}>{this.props.headline}</Text>
@@ -20,6 +22,7 @@ export default class FrontPage extends Component {
                 <Home />
                 <School />
                 <Work />
+                <Icon name="user-circle-o" size={20} color="grey" />
             </View>
         );
     }
