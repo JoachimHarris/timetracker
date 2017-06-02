@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { AppRegistry, StyleSheet, Text, TextInput, Switch, View } from 'react-native';
+import { AppRegistry, Button, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { Actions } from 'react-native-router-flux';
 
 export default class Home extends Component {
 
@@ -8,11 +9,14 @@ export default class Home extends Component {
     }
 
     render() {
+
         return(
             <View style={styles.container}>
-                <View style={[styles.boxContainer, styles.boxHome]}>
-                    <Text style={styles.headline}>{this.props.headline}</Text>
-                </View>
+                <TouchableOpacity onPress={Actions.about}>
+                    <View style={[styles.boxContainer, styles.boxHome]}>
+                        <Text style={styles.headline}>{this.props.headline}</Text>
+                    </View>
+                </TouchableOpacity>
             </View>
         )
     }
@@ -30,8 +34,7 @@ const styles = StyleSheet.create({
         height: 80,
         marginLeft: '6%',
         marginRight: '6%',
-        marginTop: '6%',
-        backgroundColor: '#6C5B7B'
+        backgroundColor: '#F67280'
     },
     headline: {
         textAlign: 'center',

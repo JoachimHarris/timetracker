@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
         marginLeft: '6%',
         marginRight: '6%',
         marginTop: '6%',
-        backgroundColor: '#BE6D84'
+        backgroundColor: '#6C5B7B'
     },
     headline: {
         textAlign: 'center',

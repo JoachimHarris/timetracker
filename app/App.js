@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import { AppRegistry, StyleSheet, View } from 'react-native';
-
-import App from './app/App.js';
+import { AppRegistry, StyleSheet, Text, View } from 'react-native';
+import Router from './Router.js';
 
 export default class TimeTracker extends Component {
 
     render() {
         return(
             <View style={styles.container}>
-                <App />
+                <Router />
             </View>
         );
     }

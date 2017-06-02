@@ -30,7 +30,8 @@ const styles = StyleSheet.create({
         height: 80,
         marginLeft: '6%',
         marginRight: '6%',
-        backgroundColor: '#F67280'
+        marginTop: '6%',
+        backgroundColor: '#BE6D84'
     },
     headline: {
         textAlign: 'center',
