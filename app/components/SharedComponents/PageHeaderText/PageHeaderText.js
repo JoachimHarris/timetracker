@@ -1,44 +1,31 @@
 import React, { Component } from 'react';
 import { AppRegistry, StyleSheet, Text, View } from 'react-native';
 
-import Home from '../Home/Home.js';
-import School from '../School/School.js';
-import Work from '../Work/Work.js';
-import FrontPageFooter from '../FrontPageFooter/FrontPageFooter.js';
-
-export default class FrontPage extends Component {
+export default class PageHeaderText extends React.Component {
 
     static defaultProps = {
-        headline: 'Froost',
-        tagline: 'Uptimize Your Time'
+        headline: 'Headline here',
+        tagline: 'Tagline here'
     }
 
     render() {
-
         return(
             <View style={styles.container}>
                 <Text style={styles.headline}>{this.props.headline}</Text>
                 <Text style={styles.tagline}>{this.props.tagline}</Text>
-                <Home />
-                <School />
-                <Work />
-                <FrontPageFooter />
             </View>
-        );
+        )
     }
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        flexDirection: 'column'
-    },
+    container: {},
     headline: {
-        fontSize: 30,
+        fontSize: 20,
         textAlign: 'center',
         marginTop: 120,
         marginBottom: 20,
-        fontWeight: '200',
+        fontWeight: '300',
         color: 'grey'
     },
     tagline: {
@@ -50,4 +37,4 @@ const styles = StyleSheet.create({
     }
 });
 
-AppRegistry.registerComponent('FrontPage', () => FrontPage);
+AppRegistry.registerComponent('PageHeaderText', () => PageHeaderText);
