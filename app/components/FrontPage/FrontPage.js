@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { AppRegistry, StyleSheet, Text, View } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
 
+import Home from '../Home/Home.js';
 import School from '../School/School.js';
 import Work from '../Work/Work.js';
-import Home from '../Home/Home.js';
+import FrontPageFooter from '../FrontPageFooter/FrontPageFooter.js';
 
 export default class FrontPage extends Component {
 
@@ -22,7 +22,7 @@ export default class FrontPage extends Component {
                 <Home />
                 <School />
                 <Work />
-                <Icon name="user-circle-o" size={20} color="grey" />
+                <FrontPageFooter />
             </View>
         );
     }
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     headline: {
         fontSize: 30,
         textAlign: 'center',
-        marginTop: 140,
+        marginTop: 120,
         marginBottom: 20,
         fontWeight: '200',
         color: 'grey'

@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -516,6 +517,7 @@
 				00E356EF1AD99517003FC87E /* TimeTrackerTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				81F8F04FCB0A41C4B0BA82D7 /* Resources */,
+				D1BD2D091EE49DF400A0ED5F /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -530,6 +532,13 @@
 				2D02E4901E0B4A5D006451C7 /* TimeTracker-tvOSTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D1BD2D091EE49DF400A0ED5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D1D715D41EE20EC80096DC98 /* Products */ = {
@@ -630,6 +639,11 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = 994RVM83QJ;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -1111,6 +1125,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = TimeTrackerJoachimHarris;
 				PRODUCT_NAME = TimeTracker;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1134,6 +1149,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = TimeTrackerJoachimHarris;
 				PRODUCT_NAME = TimeTracker;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
