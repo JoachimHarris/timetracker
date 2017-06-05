@@ -10,6 +10,8 @@ import UserInfo from './components/FrontPageFooter/FrontPageFooterComponents/Use
 import TotalTime from './components/FrontPageFooter/FrontPageFooterComponents/TotalTime/TotalTime.js';
 import CalendarDays from './components/FrontPageFooter/FrontPageFooterComponents/CalendarDays/CalendarDays.js';
 import BookmarkPlaces from './components/FrontPageFooter/FrontPageFooterComponents/BookmarkPlaces/BookmarkPlaces.js';
+import AddCustom from './components/AddCustom/AddCustom.js';
+import AddCustomPage from './components/AddCustom/AddCustomPage/AddCustomPage.js';
 
 const RouterComponent = () => {
     return  (
@@ -24,6 +26,7 @@ const RouterComponent = () => {
             <Scene key="totaltime" component={TotalTime} title="Total time spend" />
             <Scene key="calendardays" component={CalendarDays} title="Calender Day" />
             <Scene key="bookmarkplaces" component={BookmarkPlaces} title="Bookmark Places" />
+            <Scene key="addcustompage" component={AddCustomPage} title="Add Custom Place" />
         </Router>
     );
 };

@@ -23,6 +23,7 @@ export default class FrontPage extends Component {
                 <Home />
                 <School />
                 <Work />
+                <AddCustom />
                 <FrontPageFooter />
             </View>
         );
