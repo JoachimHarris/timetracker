@@ -4,6 +4,7 @@ import { AppRegistry, StyleSheet, Text, View } from 'react-native';
 import Home from '../Home/Home.js';
 import School from '../School/School.js';
 import Work from '../Work/Work.js';
+import AddCustom from '../AddCustom/AddCustom.js';
 import FrontPageFooter from '../FrontPageFooter/FrontPageFooter.js';
 
 export default class FrontPage extends Component {

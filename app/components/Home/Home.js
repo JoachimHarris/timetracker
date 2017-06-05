@@ -31,7 +31,8 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     boxHome: {
-        height: 80,
+        height: 60,
+        borderRadius: 2,
         marginLeft: '6%',
         marginRight: '6%',
         backgroundColor: '#F67280'

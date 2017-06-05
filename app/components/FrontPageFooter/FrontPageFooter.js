@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-around',
         // backgroundColor: 'blue',
-        marginTop: 40
+        marginTop: 80
     },
     iconFooter: {
         padding: '2%',

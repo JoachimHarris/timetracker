@@ -30,10 +30,11 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     boxSchool: {
-        height: 80,
+        height: 60,
+        borderRadius: 2,
         marginLeft: '6%',
         marginRight: '6%',
-        marginTop: '6%',
+        marginTop: '4%',
         backgroundColor: '#BE6D84'
     },
     headline: {
